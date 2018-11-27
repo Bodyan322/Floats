@@ -1,3 +1,274 @@
 .main {
 
+
 }
+// **************************FirstMain********************************
+.main_first{
+float: left;
+width: 100%;
+height: 784px;
+background-color: $mainFirst;
+}
+.container_first {
+    position: relative;
+    top: 13%;
+    color: $mainText;
+    text-align: center;
+    font-size: 28pt;
+    font-family: Titillium Web,sans-serif;
+    letter-spacing: 4px;
+    padding-left: 34px;
+}
+hr {
+    margin-top: 6px; 
+    border: 0;
+    height: 4px;
+    width: 92px;
+    background: $notMainText;
+    opacity: 0.2; 
+}
+.container_second{
+    line-height: 20pt;
+    position: relative;
+    color: $mainText;
+    top: 13%;
+    text-align: center;
+    font-family: Titillium Web,sans-serif;
+    font-weight: 100;
+    font-size: 16pt;
+}
+p {
+    margin: 0;
+}
+.blocks_container{
+    position: relative;
+    top: 20%;
+    left: 12%;
+    height: 476px;
+    width: 1160px;
+
+    img{
+        height: 130px;
+    }
+   
+}
+.blokc_1{
+    float: left;
+    width: 275px;
+    height: 100%;
+
+    margin: 0 20px;
+    margin-left: 0;
+    
+}
+.blokc_2{
+    float: left;
+    width: 275px;
+    height: 100%;
+    margin-right: 20px;
+}
+.blokc_3 {
+        float: left;
+        width: 275px;
+        height: 100%;
+      
+        margin-right: 20px;
+    }
+.blokc_4{
+    float: left;
+    width: 275px;
+    height: 100%;
+     
+}
+.pos_1{
+    position: relative;
+    left: 30%;
+    top: 7%;
+}
+.pos_2 {
+    position: relative;
+    left: 34%;
+    top: 7%;
+}
+.pos_3 {
+    position: relative;
+    left: 18%;
+    top: 7%;
+}
+.pos_4 {
+    position: relative;
+    left: 30%;
+    top: 7%;
+}
+.pos_text {
+    color: $mainText;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 18.1%;
+    font-family: Titillium Web,sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.poss_text_add {
+    position: relative;
+    top: 20%;
+    text-align: center;
+    color: $mainText;
+    font-family: Titillium Web,sans-serif;
+    font-size: 12pt;
+}
+// **************************FirstMain********************************
+
+// **************************SecondMain********************************
+
+.main_second{
+    float: left;
+    width: 100%;
+    height: 900px;
+    background-color: $mainSecond;
+}
+.addition {
+    color: $notMainText;
+}
+.team_block_container {
+    position: relative;
+    top: 20%;
+    left: 12%;
+    height: 476px;
+    width: 1160px;
+}
+    
+.team_items{
+    float: left;
+    width: 275px;
+    height: 100%;
+    margin: 0 20px;
+    margin-left: 0;  
+    img{
+        width: 210px;
+    }
+    &:nth-child(4){
+        margin-right: 0; 
+    }
+    .pos_text{
+        color: $notMainText;
+        p:nth-child(2){
+            font-size: 12pt;
+            color: #30bae7;
+            padding-bottom: 15px; 
+        }
+        p:nth-child(3){
+            font-size: 12pt;
+            color: $notMainText;
+            font-weight: 100;
+        }
+    }
+}
+.ball_pos{
+    position: relative;
+    left: 12%;
+    top: 6%; 
+}
+
+// **************************SecondMain********************************
+
+// **************************ThirdMain********************************
+
+.main_third{
+    float: left;
+    width: 100%;
+    height: 900px;
+    background-color: $mainThird;
+}
+.skills_block_container {
+    position: relative;
+    top: 20%;
+    left: 12%;
+    height: 476px;
+    width: 1160px;
+}
+.skills_items {
+    float: left;
+    width: 275px;
+    height: 100%;
+    margin: 0 20px;
+    margin-left: 0;
+    
+    &:nth-child(4){
+        margin-right: 0; 
+    }
+}
+
+
+$spacing: 1rem;
+$themeColor: #63B8FF;
+$backColor: #ddd;
+$textShadow: rgba(black, 0.35) 1px 1px 1px;
+
+.progress--circle {
+    position: relative;
+    display: inline-block;
+    margin: $spacing;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: $backColor;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: white;
+    }
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; 
+      background-color: $themeColor;
+    }
+  }
+  
+  .progress__number {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    line-height: 1;
+    margin-top: -0.75rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #777;
+  }
+
+  
+$step: 5;
+$loops: round(100 / $step);
+$increment: 360 / $loops;
+$half: round($loops / 2);
+@for $i from 0 through $loops {
+  .progress--bar.progress--#{$i * $step}:after {
+    width: $i * $step * 1%;
+  }
+  .progress--circle.progress--#{$i * $step}:after {
+    @if $i < $half {
+      $nextDeg: 90deg + ($increment * $i);
+      background-image: linear-gradient(90deg, $backColor 50%, transparent 50%, transparent), linear-gradient($nextDeg, $themeColor 50%, $backColor 50%, $backColor);
+    }
+    @else {
+      $nextDeg: -90deg + ($increment * ($i - $half));
+      background-image: linear-gradient($nextDeg, $themeColor 50%, transparent 50%, transparent), linear-gradient(270deg, $themeColor 50%, $backColor 50%, $backColor);
+    }
+  }
+}
+.progress_pos {
+    position: relative;
+    top: 12%;
+    left: 15%;
+}
+// **************************ThirdMain********************************

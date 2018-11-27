@@ -1,10 +1,80 @@
 .header {
+}
+.header_first {
+  box-sizing: border-box;
+  width: 100%;
+  height: 98px;
+  background-color: $headerColor;
+  float: left;
 
 }
 .logo {
-  margin: -58px 0 0 -100px;
-  @include position(absolute, 50% 0 0 50%);
+  // margin: -58px 0 0 -100px;
+  // @include position(absolute, 50% 0 0 50%);
+  float: left;
+  padding-top: 60px;
+  margin-left: 223px;
   img {
+    width: 121px;
+  }
+}
 
+.header_second {
+  float: left;
+  width: 100%;
+  height: 528px;
+  background-color: $headerColor;
+}
+.container_text{
+  line-height: 40pt;
+  position: relative;
+  color: $mainText;
+  top: 27%;
+  text-align: center;
+  font-family: Titillium Web,sans-serif;
+  font-size: 29pt;
+  
+}
+h3{
+  margin: 0;
+}
+.center {
+  position: relative;
+  top: 43.6%;
+  left: 44.2%;
+  transform: translate(-50%, -50%);
+}
+
+.button{
+  display: inline-block;
+  position: relative;
+  left: calc(50% - 60px);
+  padding: 15px;
+  margin-right: 5px;
+  height: 65px;
+  width: 310px;
+  min-width: 100px;
+  background: $button-bg-color;
+  border: none;
+  outline: none;
+  color: $mainText;
+  font-family:  Titillium Web,sans-serif;
+  font-weight: 400;
+  font-size: 15pt;
+  border-radius: 3px;
+  box-shadow: 0 5px 0px darken($button-bg-color,0%);
+  border-bottom: 2px solid darken($button-bg-color,3%);
+  
+  &:hover{
+    background: darken($button-bg-color,5%);
+    box-shadow: 0 4px 1px darken($button-bg-color,5%);
+    border-bottom: 2px solid darken($button-bg-color,8%);
+    transition: all 0.1s ease-in;
+  }
+  
+  &:active{
+    transform:translateY(4px);
+    border-bottom-width: 2px;
+    box-shadow: none;
   }
 }

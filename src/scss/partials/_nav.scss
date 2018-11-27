@@ -1,10 +1,33 @@
 .nav {
+  box-sizing: border-box;
+  float: right;
+  margin-right: 161px;
+  font-size: 13pt;
+  padding-top: 69.5px;
+  font-family: Titillium Web,sans-serif;
+  
   ul {
     list-style: none;
+    margin: 0;
+    line-height: 16pt;
     li {
+      display: inline;
+      margin-right: 6px;
       a {
-
+        outline: none;
+        text-decoration: none;
+        color: #fff;
+        padding: 3px 18px;
+        border-radius: 5px;
+          &:hover{
+            background-color: #643a79;
+            
+          }
+        }
       }
     }
   }
+.active {
+  background-color: #643a79;
 }
+
