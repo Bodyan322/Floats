@@ -5,6 +5,15 @@
   font-size: 13pt;
   padding-top: 69.5px;
   font-family: Titillium Web,sans-serif;
+
+  &-portfolio {
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 60px;
+   
+    
+  }
   
   ul {
     list-style: none;
@@ -23,11 +32,32 @@
             background-color: #643a79;
             
           }
+          
         }
       }
     }
   }
 .active {
   background-color: #643a79;
+
+  &-portfolio{
+    background-color: $mainText;
+  }
 }
+.nav-portfolio  {
+  ul{
+    li{
+      a{
+        font-weight: bold;
+        color: $notMainText;
+        &:hover{
+          background-color: $mainText;
+          
+        }
+      }
+    }
+  }
+}
+
+
 

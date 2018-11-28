@@ -171,6 +171,56 @@ p {
     left: 12%;
     top: 6%; 
 }
+.icons_container {
+    
+    position: relative;
+    width: 100%;
+    height: 7%;
+    top: 22%;
+    
+}
+.social-sprite {
+
+    float: left;
+    background-image: url(../img/spriteSocial.png);
+    background-repeat: no-repeat;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0px 0px 0px 30px;
+    
+   
+
+    &-Fb-icon {
+        width: 32px;
+        height: 32px;
+        background-position: -5px -5px;
+        
+    }
+
+    &-Twitter-icon {
+        width: 32px;
+        height: 32px;
+        background-position: -47px -47px;
+    }
+
+    &-LinkedIn-icon {
+        width: 32px;
+        height: 32px;
+        background-position: -47px -5px;
+    }
+
+    &-Mail-icon {
+        width: 32px;
+        height: 32px;
+        background-position: -5px -47px;
+    }
+
+    &:hover {
+        box-shadow: 0 0 10px 0 black;
+    }
+}
+
 
 // **************************SecondMain********************************
 
@@ -179,7 +229,7 @@ p {
 .main_third{
     float: left;
     width: 100%;
-    height: 900px;
+    height: 800px;
     background-color: $mainThird;
 }
 .skills_block_container {
@@ -188,6 +238,12 @@ p {
     left: 12%;
     height: 476px;
     width: 1160px;
+    .pos_text {
+        color: $notMainText;
+        width: 100%;
+        text-align: center;
+        float: left;
+    }
 }
 .skills_items {
     float: left;
@@ -201,74 +257,412 @@ p {
     }
 }
 
+.progress_pos{
+ text-align: center;
+ position: relative;
+ top: 40px;
+ left: 25px;
+}
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
 
-$spacing: 1rem;
-$themeColor: #63B8FF;
-$backColor: #ddd;
-$textShadow: rgba(black, 0.35) 1px 1px 1px;
+// -- vars
+$bg-color: #34495e;
+$default-size: 190px;
+// $label-font-size: $default-size / 4;
+// $label-font-size-redo: $default-size * 4;
+ $label-font-size: 36pt;
+ $label-font-size-redo: 36pt;
 
-.progress--circle {
-    position: relative;
-    display: inline-block;
-    margin: $spacing;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: $backColor;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      background-color: white;
+// -- mixins
+@mixin size($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+@mixin draw-progress($progress, $color) {
+  .pie {
+    .half-circle {
+      border-color: $color;
     }
-    &:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      height: 100%;
-      border-radius: 50%; 
-      background-color: $themeColor;
+
+    .left-side {
+      transform: rotate($progress * 3.6deg);
+    }
+
+    @if $progress <= 50 {
+      .right-side {
+        display: none;
+      }
+    } @else {
+      clip: rect(auto, auto, auto, auto);
+
+      .right-side {
+        transform: rotate(180deg);
+      }
     }
   }
+}
+
+@mixin draw-progress--solid($progress, $color, $bg-color) {
+  background: linear-gradient(to right, $color 50%, $bg-color 50%);
   
-  .progress__number {
+  &:before {
+    @if $progress <= 50 {
+      background: $bg-color;
+      transform: rotate((100 - (50 - $progress)) / 100 * 360deg * -1);
+    } @else {
+      background: $color;
+      transform: rotate((100 - $progress) / 100 * 360deg);
+    }
+  }
+}
+
+// -- selectors
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+.set-size {
+  font-size: 40px;
+}
+
+.charts-container {
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+.pie-wrapper {
+  @include size($default-size, $default-size);
+  float: left;
+  margin: 15px;
+  position: relative;
+  
+  &:nth-child(3n + 1) {
+    clear: both;
+  }
+
+  .pie {
+    @include size(100%, 100%);
+    clip: rect(0, $default-size, $default-size, $default-size / 2);
+    left: 0;
     position: absolute;
-    top: 50%;
-    width: 100%;
-    line-height: 1;
-    margin-top: -0.75rem;
-    text-align: center;
-    font-size: 1.5rem;
-    color: #777;
+    top: 0;
+
+    .half-circle {
+      @include size(100%, 100%);
+      border: ($default-size / 10) solid #3498db;
+      border-radius: 50%;
+      clip: rect(0, $default-size / 2, $default-size, 0);
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
   }
 
+  .label {
+    background: $bg-color;
+    border-radius: 50%;
+    bottom: $label-font-size-redo / 10;
+    color: #ecf0f1;
+    cursor: default;
+    display: block;
+    font-size: $label-font-size;
+    left: $label-font-size-redo / 10;
+    line-height: $label-font-size-redo * .70;
+    position: absolute;
+    top: 68px;
+    text-align: center;
+    left: 65px;
+
+    .smaller {
+      color: #bdc3c7;
+      font-size: .45em;
+      padding-bottom: 20px;
+      vertical-align: super;
+    }
+  }
+
+  .shadow {
+    @include size(100%, 100%);
+    border: $default-size / 10 solid #bdc3c7;
+    border-radius: 50%;
+  }
+
+  &.style-2 {
+    .label {
+      background: none;
+      color: #7f8c8d;
+
+      .smaller {
+        color: #bdc3c7;
+      }
+    }
+  }
+
+  &.progress-30 {
+    @include draw-progress(30, #3498db);
+  }
+
+  &.progress-85 {
+    @include draw-progress(85, #eb7d4b);
+  }
+
+
+  &.progress-90 {
+    @include draw-progress(90, #30bae7);
+  }
+
+  &.progress-75 {
+    @include draw-progress(75, #d74680);
+  }
+
+  &.progress-70 {
+    @include draw-progress(70, #15c7a8);
+  }
+}
+
+.pie-wrapper--solid {
+  border-radius: 50%;
+  overflow: hidden;
+
+  &:before {
+    border-radius: 0 100% 100% 0 / 50%;
+    content: '';
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+  }
   
-$step: 5;
-$loops: round(100 / $step);
-$increment: 360 / $loops;
-$half: round($loops / 2);
-@for $i from 0 through $loops {
-  .progress--bar.progress--#{$i * $step}:after {
-    width: $i * $step * 1%;
+  .label {
+    background: transparent;
   }
-  .progress--circle.progress--#{$i * $step}:after {
-    @if $i < $half {
-      $nextDeg: 90deg + ($increment * $i);
-      background-image: linear-gradient(90deg, $backColor 50%, transparent 50%, transparent), linear-gradient($nextDeg, $themeColor 50%, $backColor 50%, $backColor);
-    }
-    @else {
-      $nextDeg: -90deg + ($increment * ($i - $half));
-      background-image: linear-gradient($nextDeg, $themeColor 50%, transparent 50%, transparent), linear-gradient(270deg, $themeColor 50%, $backColor 50%, $backColor);
-    }
+  
+  &.progress-65 {
+    @include draw-progress--solid(65, #e67e22, $bg-color);
+  }
+  
+  &.progress-25 {
+    @include draw-progress--solid(25, #9b59b6, $bg-color);
+  }
+  
+  &.progress-88 {
+    @include draw-progress--solid(88, #3498db, $bg-color);
   }
 }
-.progress_pos {
-    position: relative;
-    top: 12%;
-    left: 15%;
-}
+
+
+
 // **************************ThirdMain********************************
+
+// **************************FourthMain********************************
+
+.main_fourth{
+  float: left;
+  width: 100%;
+  height: 1600px;
+  background-color: $mainFourth;
+
+  .center {
+    top: 16%;
+  }
+  .button {
+    background: $mainFirst;
+    box-shadow: 0 5px 0px darken($mainFirst,0%);
+    border-bottom: 2px solid darken($mainFirst,3%);
+
+    &:hover{
+      background: darken($mainFirst,5%);
+      box-shadow: 0 4px 1px darken($mainFirst,5%);
+      border-bottom: 2px solid darken($mainFirst,8%);
+      transition: all 0.1s ease-in;
+    }
+    &:active{
+      transform:translateY(4px);
+      border-bottom-width: 2px;
+      box-shadow: none;
+    }
+  }
+}
+.nav_container {
+  position: relative;
+  top: 176px;
+  text-align: center;
+}
+
+.portfolio__items {
+  transition: 600ms;
+  width: 1165px;
+  margin: 0 auto;
+  padding-top: 65px;
+
+  li {
+
+      display: inline-block;
+      margin: 0 10px;
+
+      img {
+          transition: 600ms;
+          margin-bottom: 30px;
+      }
+
+      h5 {
+          font-size: 14pt;
+          margin-bottom: 60px;
+      }
+  }
+}
+
+
+// **************************FourthMain********************************
+
+// **************************FifthMain********************************
+.main_fifth{
+  float: left;
+  width: 100%;
+  height: 1000px;
+  background-color: $mainFifth;
+}
+.reviews__block__container {
+
+  text-align: center;
+  padding: 110px 0 0 0;
+
+
+  .reviews__items {
+    padding-top: 200px;
+
+    li {
+
+        display: inline-block;
+        margin: 0 70px 150px 70px;
+        // width: 430px;
+
+        .reviews__avatar {
+            float: left;
+            margin-right: 50px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: #787878;
+        }
+
+        div {
+
+            text-align: left;
+
+            .reviews__article {
+                font-style: italic;
+                color: $mainText;
+                font-size: 12pt;
+                width: 290px;
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+
+            .reviews__name {
+                font-weight: bold;
+                font-size: 14pt;
+                display: inline-block;
+                color: $mainText;
+            }
+
+            .reviews__position {
+                color: $reviews-position-color;
+                font-size: 12pt;
+                display: inline-block;
+            }
+        }
+    }
+  }
+}
+
+
+
+
+// **************************FifthMain********************************
+
+
+// **************************LastMain********************************
+
+.main_last{
+  float: left;
+  width: 100%;
+  height: 1000px;
+  background-color: $lastMain;
+
+
+  .center {
+    top: -15%;
+  }
+  .button {
+    background: $button-second-color;
+    box-shadow: 0 5px 0px darken($button-second-color,0%);
+    border-bottom: 2px solid darken($button-second-color,3%);
+
+    &:hover{
+      background: darken($button-second-color,5%);
+      box-shadow: 0 4px 1px darken($button-second-color,5%);
+      border-bottom: 2px solid darken($button-second-color,8%);
+      transition: all 0.1s ease-in;
+    }
+    &:active{
+      transform:translateY(4px);
+      border-bottom-width: 2px;
+      box-shadow: none;
+    }
+  }
+}
+
+.feedback__block__container {
+
+  text-align: center;
+  padding: 220px 0 220px 0; 
+
+  form {
+
+    margin: 0 auto;
+    width: 863px;
+
+    input {
+        outline: none;
+        background-color: $feedback-form-background-color;
+        border: none;
+        border-radius: 5px;
+        width: 380px;
+        height: 55px;
+        margin: 0 15px 25px 15px;
+        padding-left: 20px;
+        &::placeholder {
+            color: $mainText;
+            font-size: 14pt;
+        }
+    }
+
+    textarea {
+        width: 807px;
+        height: 180px;
+        outline: none;
+        background-color: $feedback-form-background-color;
+        border: none;
+        border-radius: 5px;
+        margin: 0 15px;
+        color: $mainText;
+        font-size: 14pt;
+        padding: 20px 0 0 20px;
+        margin-bottom: 50px;
+    }
+}
+}
+
+
+
+// **************************LastMain********************************
+
+
