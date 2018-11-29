@@ -6,18 +6,18 @@
 .main_first{
 float: left;
 width: 100%;
-height: 784px;
+// height: 784px;
 background-color: $mainFirst;
 }
 .container_first {
-    position: relative;
-    top: 13%;
+    
+    padding-top: 10%;
     color: $mainText;
     text-align: center;
     font-size: 28pt;
     font-family: Titillium Web,sans-serif;
     letter-spacing: 4px;
-    padding-left: 34px;
+   
 }
 hr {
     margin-top: 6px; 
@@ -29,9 +29,9 @@ hr {
 }
 .container_second{
     line-height: 20pt;
-    position: relative;
+    padding-bottom: 5%;
     color: $mainText;
-    top: 13%;
+    
     text-align: center;
     font-family: Titillium Web,sans-serif;
     font-weight: 100;
@@ -41,12 +41,10 @@ p {
     margin: 0;
 }
 .blocks_container{
+    float: left;
     position: relative;
-    top: 20%;
+    padding-bottom: 5%;
     left: 12%;
-    height: 476px;
-    width: 1160px;
-
     img{
         height: 130px;
     }
@@ -56,7 +54,6 @@ p {
     float: left;
     width: 275px;
     height: 100%;
-
     margin: 0 20px;
     margin-left: 0;
     
@@ -71,7 +68,6 @@ p {
         float: left;
         width: 275px;
         height: 100%;
-      
         margin-right: 20px;
     }
 .blokc_4{
@@ -126,18 +122,18 @@ p {
 .main_second{
     float: left;
     width: 100%;
-    height: 900px;
+    // height: 900px;
     background-color: $mainSecond;
 }
 .addition {
     color: $notMainText;
 }
 .team_block_container {
+    float: left;
     position: relative;
-    top: 20%;
     left: 12%;
-    height: 476px;
-    width: 1160px;
+    padding-bottom: 5%;
+ 
 }
     
 .team_items{
@@ -229,15 +225,15 @@ p {
 .main_third{
     float: left;
     width: 100%;
-    height: 800px;
+    
     background-color: $mainThird;
 }
 .skills_block_container {
     position: relative;
-    top: 20%;
+    float: left;
+    padding-bottom: 5%;
     left: 12%;
-    height: 476px;
-    width: 1160px;
+
     .pos_text {
         color: $notMainText;
         width: 100%;
@@ -260,7 +256,7 @@ p {
 .progress_pos{
  text-align: center;
  position: relative;
- top: 40px;
+ float: left;
  left: 25px;
 }
 @import url(https://fonts.googleapis.com/css?family=Lato:700);
@@ -466,7 +462,7 @@ $default-size: 190px;
 .main_fourth{
   float: left;
   width: 100%;
-  height: 1600px;
+
   background-color: $mainFourth;
 
   .center {
@@ -492,15 +488,16 @@ $default-size: 190px;
 }
 .nav_container {
   position: relative;
-  top: 176px;
+  
   text-align: center;
 }
 
 .portfolio__items {
   transition: 600ms;
-  width: 1165px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 65px;
+  padding-bottom: 5%;
 
   li {
 
@@ -526,23 +523,23 @@ $default-size: 190px;
 .main_fifth{
   float: left;
   width: 100%;
-  height: 1000px;
+ 
   background-color: $mainFifth;
 }
 .reviews__block__container {
-
+  width: 100%;
   text-align: center;
   padding: 110px 0 0 0;
 
 
   .reviews__items {
-    padding-top: 200px;
+    // padding-top: 200px;
 
     li {
 
         display: inline-block;
-        margin: 0 70px 150px 70px;
-        // width: 430px;
+        margin: 0 0 150px 0;
+        
 
         .reviews__avatar {
             float: left;
@@ -594,7 +591,7 @@ $default-size: 190px;
 .main_last{
   float: left;
   width: 100%;
-  height: 1000px;
+ 
   background-color: $lastMain;
 
 
@@ -623,7 +620,7 @@ $default-size: 190px;
 .feedback__block__container {
 
   text-align: center;
-  padding: 220px 0 220px 0; 
+  padding: 70px 0px 70px 0px;
 
   form {
 

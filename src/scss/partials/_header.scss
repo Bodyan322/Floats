@@ -3,7 +3,7 @@
 .header_first {
   box-sizing: border-box;
   width: 100%;
-  height: 98px;
+  
   background-color: $headerColor;
   float: left;
 
@@ -22,14 +22,14 @@
 .header_second {
   float: left;
   width: 100%;
-  height: 528px;
+  
   background-color: $headerColor;
 }
 .container_text{
   line-height: 40pt;
-  position: relative;
+  padding-top: 7%;
+  padding-bottom: 5%;
   color: $mainText;
-  top: 27%;
   text-align: center;
   font-family: Titillium Web,sans-serif;
   font-size: 29pt;
@@ -40,7 +40,7 @@ h3{
 }
 .center {
   position: relative;
-  top: 43.6%;
+  margin-bottom: 5%;
   left: 44.2%;
   transform: translate(-50%, -50%);
 }

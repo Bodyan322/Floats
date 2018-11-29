@@ -1,6 +1,7 @@
 @media only screen and (min-width:320px) {
 
 }
+
 @media only screen and (min-width:480px) {
 
 }
@@ -16,6 +17,314 @@
 @media only screen and (min-width:1280px) {
 
 }
+@media all and (max-width: 1360px) and (min-width: 992px){
+    .logo {
+        margin-left: 70px;
+        img {
+          width: 100px;
+        }
+      }
+    .nav {
+          font-size: 10pt;
+      }
+    .container_text {
+        font-size: 24pt;
+      }
+    .button {
+        left: calc(50% - 20px);
+        height: 55px;
+        width: 200px;
+        font-size: 12pt;
+    }
+    .container_first {
+        font-size: 24pt;
+    }
+    
+    .blocks_container{
+        left: 22%;
+    }
+    .block_2{
+        margin-right: 150px;
+    }
+    .feedback__block__container {
+
+        text-align: center;
+        padding: 70px 0px 70px 0px;
+      
+        form {
+      
+          margin: 0 auto;
+          width: 863px;
+      
+          input {
+            width: 300px;
+                }
+            } 
+        }
+            .portfolio__items {
+                li{
+                 img {
+                  width: 368px;  
+                    }
+                }
+            }
+    footer {
+        ul{
+            li{
+                a{
+                    margin: 0 30px;
+                }
+            }
+        }
+    }  
+}
+
+@media all and (max-width: 992px) and (min-width: 768px){
+    .logo {
+        margin-left: 30px;
+        img {
+          width: 85px;
+        }
+      }
+      .nav {
+        font-size: 9pt;
+        margin-right: 130px;
+    }
+    .container_text {
+        font-size: 20pt;
+      }
+    .button {
+        left: calc(50% - 30px);
+        height: 45px;
+        width: 180px;
+        font-size: 12pt;
+        padding: 10px;
+    }
+    .container_first {
+        font-size: 20pt;
+    }
+    .container_second {
+        font-size: 12pt;
+    }
+
+    .pos_text{
+        font-size: 15pt;
+    }
+    .poss_text_add{
+        font-size: 11pt;
+    }
+    .blokc_2 {
+        padding-bottom: 5%;
+    }
+    .blokc_4 {
+        padding-bottom: 5%;
+    }
+    .pos_1{
+        
+        left: 32%;
+        
+    }
+    .pos_2 {
+        
+        left: 38%;
+        
+    }
+    .pos_3 {
+        
+        left: 27%;
+        
+    }
+    .pos_4 {
+        
+        left: 39%;
+        
+    }
+    .feedback__block__container {
+        form{
+
+
+         textarea {
+        width: 640px;
+        height: 180px;
+        margin: 0 0px;
+        color: #fff;
+        font-size: 10pt;
+        padding: 20px 0 0 20px;
+        margin-bottom: 50px;
+        
+        }
+        input {
+            width: 300px;
+            font-size: 10pt;
+                }
+    }
+}
+.ball_pos {
+    text-align: center;
+    left: 0%;
+}
+.team_items{
+    padding-bottom: 5%; 
+        img {
+        width: 180px;
+    }
+}
+.pie-wrapper{
+    width: 170px;
+    height: 170px;
+    .label {
+        top: 59px;
+        left: 57px;
+    }
+} 
+.portfolio__items {
+    li{
+     img {
+      width: 250px;  
+        }
+    h5 {
+        font-size: 12pt;
+    }
+    }
+}
+
+footer {
+    ul{
+        li{
+            a{
+                margin: 0 15px;
+            }
+        }
+    }
+    }  
+}
+
+
+@media all and (max-width: 768px) {
+    .logo {
+        margin-left: 10px;
+        img {
+          width: 85px;
+        }
+      }
+      .nav {
+        font-size: 9pt;
+        margin-right: 130px;
+    }
+    .container_text {
+        font-size: 16pt;
+      }
+    .button {
+        left: calc(50% - 30px);
+        height: 35px;
+        width: 160px;
+        font-size: 10pt;
+        padding: 5px;
+    }
+    .container_first {
+        font-size: 16pt;
+    }
+    .container_second {
+        font-size: 10pt;
+    }
+
+    .pos_text{
+        font-size: 13pt;
+    }
+    .poss_text_add{
+        font-size: 10pt;
+    }
+    .blocks_container {
+        img {
+            height: 100px;
+        }
+    }
+    .blokc_2 {
+        padding-bottom: 5%;
+    }
+    .blokc_4 {
+        padding-bottom: 5%;
+    }
+    .pos_1{
+        left: 32%;
+        
+    }
+    .pos_2 {
+        left: 38%;
+        
+    }
+    .pos_3 {
+        left: 27%;
+        
+    }
+    .pos_4 {
+        
+        left: 39%;
+        
+    }
+    .feedback__block__container {
+        form{
+
+
+         textarea {
+        width: 465px;
+        height: 180px;
+        margin: 0 0px;
+        color: #fff;
+        font-size: 10pt;
+        padding: 20px 0 0 20px;
+        margin-bottom: 50px;
+        margin-right: 170px;
+        
+        }
+        input {
+            width: 401px;
+            font-size: 10pt;
+            margin-right: 246px;
+                }
+    }
+}
+.ball_pos {
+    text-align: center;
+    left: 0%;
+}
+.team_items{
+    padding-bottom: 5%; 
+        img {
+        width: 140px;
+    }
+}
+.pie-wrapper{
+    width: 170px;
+    height: 170px;
+    .label {
+        top: 59px;
+        left: 57px;
+    }
+} 
+.portfolio__items {
+    li{
+     img {
+      width: 230px;  
+        }
+    h5 {
+        font-size: 10pt;
+    }
+    }
+}
+
+footer {
+    ul{
+        li{
+            a{
+                margin: 0 10px;
+            }
+        }
+    }
+    }  
+}
+
+
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
 
 }
