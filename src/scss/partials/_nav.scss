@@ -1,7 +1,7 @@
 .nav {
+  
   box-sizing: border-box;
   float: right;
-  margin-right: 161px;
   font-size: 13pt;
   padding-top: 69.5px;
   font-family: Titillium Web,sans-serif;
@@ -19,6 +19,8 @@
     list-style: none;
     margin: 0;
     line-height: 16pt;
+    padding-left: 0;
+    margin-right: 21px;
     li {
       display: inline;
       margin-right: 6px;
@@ -44,6 +46,7 @@
     background-color: $mainText;
   }
 }
+
 .nav-portfolio  {
   ul{
     li{

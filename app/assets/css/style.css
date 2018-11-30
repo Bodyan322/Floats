@@ -383,15 +383,58 @@ th {
 .header_first {
   box-sizing: border-box;
   width: 100%;
-  background-color: #87509c;
-  float: left; }
+  background-color: #87509c; }
+
+.content_header_first {
+  margin: 0 161px 0 229px; }
 
 .logo {
   float: left;
-  padding-top: 60px;
-  margin-left: 223px; }
+  padding-top: 60px; }
   .logo img {
     width: 121px; }
+
+.burger {
+  display: none;
+  color: #fff;
+  float: right;
+  padding-top: 69.5px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 30px; }
+  .burger .burger_links:hover .first, .burger :focus .first {
+    margin-top: 10px;
+    -webkit-transform: rotate(45deg); }
+  .burger .burger_links:hover .second, .burger :focus .second {
+    opacity: 0; }
+  .burger .burger_links:hover .third, .burger :focus .third {
+    margin-top: -15px;
+    -webkit-transform: rotate(-45deg); }
+  .burger .first {
+    margin-top: 0;
+    display: block;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 5px;
+    transition: all .3s linear .23s;
+    position: relative; }
+  .burger .second {
+    display: block;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 4.5px;
+    margin: 5px 0 0;
+    transition: all .3s linear .23s;
+    position: relative; }
+  .burger .third {
+    display: block;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 5px;
+    margin: 5px 0 0;
+    transition: all .3s linear .23s;
+    position: relative; }
 
 .header_second {
   float: left;
@@ -400,8 +443,8 @@ th {
 
 .container_text {
   line-height: 40pt;
-  padding-top: 7%;
-  padding-bottom: 5%;
+  padding-top: 8.8%;
+  padding-bottom: 58px;
   color: #FFF;
   text-align: center;
   font-family: Titillium Web,sans-serif;
@@ -411,16 +454,11 @@ h3 {
   margin: 0; }
 
 .center {
-  position: relative;
-  margin-bottom: 5%;
-  left: 44.2%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+  text-align: center;
+  padding-bottom: 159px; }
 
 .button {
-  display: inline-block;
   position: relative;
-  left: calc(50% - 60px);
   padding: 15px;
   margin-right: 5px;
   height: 65px;
@@ -450,7 +488,6 @@ h3 {
 .nav {
   box-sizing: border-box;
   float: right;
-  margin-right: 161px;
   font-size: 13pt;
   padding-top: 69.5px;
   font-family: Titillium Web,sans-serif; }
@@ -462,7 +499,9 @@ h3 {
   .nav ul {
     list-style: none;
     margin: 0;
-    line-height: 16pt; }
+    line-height: 16pt;
+    padding-left: 0;
+    margin-right: 21px; }
     .nav ul li {
       display: inline;
       margin-right: 6px; }
@@ -492,7 +531,7 @@ h3 {
   background-color: #17c2a4; }
 
 .container_first {
-  padding-top: 10%;
+  padding-top: 7%;
   color: #FFF;
   text-align: center;
   font-size: 28pt;
@@ -509,7 +548,7 @@ hr {
 
 .container_second {
   line-height: 20pt;
-  padding-bottom: 5%;
+  padding-bottom: 5.5%;
   color: #FFF;
   text-align: center;
   font-family: Titillium Web,sans-serif;
@@ -522,33 +561,37 @@ p {
 .blocks_container {
   float: left;
   position: relative;
-  padding-bottom: 5%;
+  padding-bottom: 7.8%;
   left: 12%; }
   .blocks_container img {
-    height: 130px; }
+    height: 130px;
+    margin-bottom: 46px; }
+  .blocks_container p:nth-child(1) {
+    margin-bottom: 12px; }
 
 .blokc_1 {
   float: left;
-  width: 275px;
+  width: 250px;
   height: 100%;
   margin: 0 20px;
-  margin-left: 0; }
+  margin-left: 10px;
+  margin-right: 45px; }
 
 .blokc_2 {
   float: left;
-  width: 275px;
+  width: 250px;
   height: 100%;
-  margin-right: 20px; }
+  margin-right: 39px; }
 
 .blokc_3 {
   float: left;
-  width: 275px;
+  width: 250px;
   height: 100%;
-  margin-right: 20px; }
+  margin-right: 50px; }
 
 .blokc_4 {
   float: left;
-  width: 275px;
+  width: 250px;
   height: 100%; }
 
 .pos_1 {
@@ -610,7 +653,8 @@ p {
   margin: 0 20px;
   margin-left: 0; }
   .team_items img {
-    width: 210px; }
+    width: 210px;
+    margin-bottom: 21px; }
   .team_items:nth-child(4) {
     margin-right: 0; }
   .team_items .pos_text {
@@ -622,7 +666,8 @@ p {
     .team_items .pos_text p:nth-child(3) {
       font-size: 12pt;
       color: #000;
-      font-weight: 100; }
+      font-weight: 100;
+      padding-bottom: 30px; }
 
 .ball_pos {
   position: relative;
@@ -630,10 +675,18 @@ p {
   top: 6%; }
 
 .icons_container {
-  position: relative;
+  padding-left: 38px;
   width: 100%;
   height: 7%;
   top: 22%; }
+
+.three_icons {
+  padding-left: 60px; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .social-sprite {
   float: left;
@@ -642,7 +695,7 @@ p {
   display: block;
   border-radius: 50%;
   cursor: pointer;
-  margin: 0px 0px 0px 30px; }
+  margin: 0px 0px 0px 14px; }
   .social-sprite-Fb-icon {
     width: 32px;
     height: 32px;
@@ -1058,8 +1111,12 @@ footer {
     .logo img {
       width: 85px; }
   .nav {
+    display: none;
     font-size: 9pt;
     margin-right: 130px; }
+  .burger {
+    display: block;
+    padding-top: 62.5px; }
   .container_text {
     font-size: 20pt; }
   .button {

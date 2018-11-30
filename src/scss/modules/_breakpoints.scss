@@ -87,8 +87,13 @@
         }
       }
       .nav {
+        display: none;
         font-size: 9pt;
         margin-right: 130px;
+    }
+    .burger {
+        display: block;
+        padding-top: 62.5px;
     }
     .container_text {
         font-size: 20pt;
