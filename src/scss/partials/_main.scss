@@ -19,7 +19,16 @@ background-color: $mainFirst;
     letter-spacing: 4px;
    
 }
-
+.decoline::after{
+  content: "";
+  display: block;
+  height: 4px;
+  width: 92px;
+  background: $notMainText;
+  opacity: 0.2; 
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
 hr {
     margin-top: 6px; 
     border: 0;
@@ -28,6 +37,7 @@ hr {
     background: $notMainText;
     opacity: 0.2; 
 }
+
 .container_second{
     line-height: 20pt;
     padding-bottom: 5.5%;
@@ -42,9 +52,10 @@ p {
 }
 .blocks_container{
     float: left;
-    position: relative;
-    padding-bottom: 7.8%;
-    left: 12%;
+    margin-left: 180px;
+    padding-bottom: 119px;
+    text-align: center;
+   
     img{
         height: 130px;
         margin-bottom: 46px;
@@ -135,9 +146,8 @@ p {
 }
 .team_block_container {
     float: left;
-    position: relative;
-    left: 12%;
     padding-bottom: 5%;
+    margin-left: 180px;
  
 }
     
@@ -249,12 +259,14 @@ p {
     
     background-color: $mainThird;
 }
+.pdb {
+  padding-top: 160px;
+}
 .skills_block_container {
-    position: relative;
     float: left;
     padding-bottom: 5%;
-    left: 12%;
-
+    margin-left: 180px;
+    padding-bottom: 118px;
     .pos_text {
         color: $notMainText;
         width: 100%;
@@ -276,9 +288,7 @@ p {
 
 .progress_pos{
  text-align: center;
- position: relative;
  float: left;
- left: 25px;
 }
 @import url(https://fonts.googleapis.com/css?family=Lato:700);
 
@@ -357,7 +367,7 @@ $default-size: 190px;
 .pie-wrapper {
   @include size($default-size, $default-size);
   float: left;
-  margin: 15px;
+  margin-left: 40px;
   position: relative;
   
   &:nth-child(3n + 1) {
@@ -400,8 +410,8 @@ $default-size: 190px;
     .smaller {
       color: #bdc3c7;
       font-size: .45em;
-      padding-bottom: 20px;
-      vertical-align: super;
+      // padding-bottom: 20px;
+      // vertical-align: super;
     }
   }
 
@@ -507,6 +517,9 @@ $default-size: 190px;
     }
   }
 }
+.pdb_portf {
+  padding-bottom: 50px ;
+}
 .nav_container {
   position: relative;
   
@@ -517,24 +530,30 @@ $default-size: 190px;
   transition: 600ms;
   width: 100%;
   margin: 0 auto;
-  padding-top: 65px;
-  padding-bottom: 5%;
+  padding-top: 77px;
+  padding-bottom: 30px;
 
   li {
 
       display: inline-block;
-      margin: 0 10px;
+      // margin: 0 10px;
+      margin-right: 32px;
 
       img {
           transition: 600ms;
           margin-bottom: 30px;
+          width: 560px;
       }
 
       h5 {
           font-size: 14pt;
-          margin-bottom: 60px;
+          margin-bottom: 50px;
+          margin-top: 0;
       }
   }
+}
+.pb_butt_portf{
+  padding-bottom: 119px;
 }
 
 
@@ -547,59 +566,53 @@ $default-size: 190px;
  
   background-color: $mainFifth;
 }
-.reviews__block__container {
-  width: 100%;
-  text-align: center;
-  padding: 110px 0 0 0;
 
 
-  .reviews__items {
-    // padding-top: 200px;
-
-    li {
-
-        display: inline-block;
-        margin: 0 0 150px 0;
-        
-
-        .reviews__avatar {
-            float: left;
-            margin-right: 50px;
-            height: 100px;
-            width: 100px;
-            border-radius: 50%;
-            background-color: #787878;
-        }
-
-        div {
-
-            text-align: left;
-
-            .reviews__article {
-                font-style: italic;
-                color: $mainText;
-                font-size: 12pt;
-                width: 290px;
-                display: inline-block;
-                margin-bottom: 15px;
-            }
-
-            .reviews__name {
-                font-weight: bold;
-                font-size: 14pt;
-                display: inline-block;
-                color: $mainText;
-            }
-
-            .reviews__position {
-                color: $reviews-position-color;
-                font-size: 12pt;
-                display: inline-block;
-            }
-        }
-    }
-  }
+.rewiews_container {
+  margin-left: 184px;
+  
 }
+.rewiews_bloks{
+  max-width: 462px;
+  float: left;
+  margin-right: 158px;
+    margin-bottom: 111px;
+  img {
+    float: left;
+    width: 100px;
+    margin-right: 52px;
+    margin-bottom: 70px;
+  }
+  p{
+    padding-top: 5px;
+    padding-bottom: 17px;
+    font-size: 20px;
+    font-style: italic;
+    color: #fff;
+    word-spacing: 2px;
+   
+  }
+  .position_rewiews{
+    font-size: 24px;
+   padding-bottom: 0;
+   font-weight: bold;
+   font-style: normal;
+  }
+  .position_rewiews_gold{
+    padding-top: 0;
+    color: $reviews-position-color;
+    font-style: normal;
+  }
+  
+ 
+p:nth-child(1){
+  padding-bottom: 16px;
+}
+}
+.pdb_rewiews{
+  padding-bottom: 65px;
+}
+
 
 
 
@@ -639,16 +652,18 @@ $default-size: 190px;
 }
 
 .feedback__block__container {
-
+  float: left;
   text-align: center;
   padding: 70px 0px 70px 0px;
+  width: 100%;
 
   form {
 
     margin: 0 auto;
-    width: 863px;
+    
 
     input {
+        color: #fff;
         outline: none;
         background-color: $feedback-form-background-color;
         border: none;
