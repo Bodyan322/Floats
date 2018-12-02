@@ -1,20 +1,18 @@
 .main {
 
-
+}
+.section{
+  width: 100%;
 }
 // **************************FirstMain********************************
-.main_first{
-float: left;
-width: 100%;
-// height: 784px;
+.section-first{
 background-color: $mainFirst;
 }
 .container_first {
-    
     padding-top: 7%;
     color: $mainText;
     text-align: center;
-    font-size: 28pt;
+    font-size: 37px;
     font-family: Titillium Web,sans-serif;
     letter-spacing: 4px;
    
@@ -29,14 +27,6 @@ background-color: $mainFirst;
   margin: 0 auto;
   margin-bottom: 25px;
 }
-hr {
-    margin-top: 6px; 
-    border: 0;
-    height: 4px;
-    width: 92px;
-    background: $notMainText;
-    opacity: 0.2; 
-}
 
 .container_second{
     line-height: 20pt;
@@ -45,16 +35,17 @@ hr {
     text-align: center;
     font-family: Titillium Web,sans-serif;
     font-weight: 100;
-    font-size: 16pt;
+    font-size: 20px;
 }
 p {
     margin: 0;
 }
 .blocks_container{
-    float: left;
-    margin-left: 180px;
+    margin-left: 13%;
     padding-bottom: 119px;
-    text-align: center;
+    text-align: center; 
+    color: #fff;
+  
    
     img{
         height: 130px;
@@ -65,100 +56,57 @@ p {
     }
    
 }
-.blokc_1{
-    float: left;
-    width: 250px;
-    height: 100%;
-    margin: 0 20px;
-    margin-left: 10px;
-    margin-right: 45px;
+.main_sett{
+  float: left;
+  width: 250px;
+  height: 100%
+}
+.blokc_flag{
+    // margin-right: 38px;
+    margin-right: 3%;
     
 }
-.blokc_2{
-    float: left;
-    width: 250px;
-    height: 100%;
-    margin-right: 39px;
+.blokc_pen{
+    // margin-right: 40px;
+    margin-right: 3.5%;
 }
-.blokc_3 {
-        float: left;
-        width: 250px;
-        height: 100%;
-        margin-right: 50px;
+.blokc_repair {
+    // margin-right: 47px;
+    margin-right: 4%;
     }
-.blokc_4{
-    float: left;
-    width: 250px;
-    height: 100%;
+.blokc_rocket{
      
 }
-.pos_1{
-    position: relative;
-    left: 30%;
-    top: 7%;
-}
-.pos_2 {
-    position: relative;
-    left: 34%;
-    top: 7%;
-}
-.pos_3 {
-    position: relative;
-    left: 18%;
-    top: 7%;
-}
-.pos_4 {
-    position: relative;
-    left: 30%;
-    top: 7%;
-}
 .pos_text {
-    color: $mainText;
-    margin: 0;
-    text-align: center;
-    position: relative;
-    top: 18.1%;
     font-family: Titillium Web,sans-serif;
-    font-size: 20pt;
+    font-size: 26px;
     font-weight: bold;
 }
-
 .poss_text_add {
-    position: relative;
-    top: 20%;
-    text-align: center;
-    color: $mainText;
     font-family: Titillium Web,sans-serif;
-    font-size: 12pt;
+    font-size: 16px;
 }
 // **************************FirstMain********************************
 
 // **************************SecondMain********************************
 
-.main_second{
-    float: left;
-    width: 100%;
-    // height: 900px;
+.section-second{
     background-color: $mainSecond;
 }
 .addition {
     color: $notMainText;
 }
 .team_block_container {
-    float: left;
-    padding-bottom: 5%;
-    margin-left: 180px;
- 
+    padding-bottom: 137px;
+    margin-left: 11%;
+    text-align: center;
 }
+
     
 .team_items{
     float: left;
     width: 275px;
-    height: 100%;
-    margin: 0 20px;
-    margin-left: 0;  
-
-
+    margin: 0 20px 0 0;
     img{
         width: 210px;
         margin-bottom: 21px;
@@ -169,12 +117,12 @@ p {
     .pos_text{
         color: $notMainText;
         p:nth-child(2){
-            font-size: 12pt;
+            
             color: #30bae7;
             padding-bottom: 15px; 
         }
         p:nth-child(3){
-            font-size: 12pt;
+           
             color: $notMainText;
             font-weight: 100;
             padding-bottom: 30px; 
@@ -183,13 +131,9 @@ p {
     
 }
 .ball_pos{
-    position: relative;
-    left: 12%;
-    top: 6%; 
+   
 }
 .icons_container {
-    
-    // position: relative;
     padding-left: 38px; 
     width: 100%;
     height: 7%;
@@ -253,19 +197,14 @@ p {
 
 // **************************ThirdMain********************************
 
-.main_third{
-    float: left;
-    width: 100%;
-    
+.section-third{
     background-color: $mainThird;
 }
 .pdb {
-  padding-top: 160px;
+  padding-top: 100px;
 }
 .skills_block_container {
-    float: left;
-    padding-bottom: 5%;
-    margin-left: 180px;
+    margin-left: 12%;
     padding-bottom: 118px;
     .pos_text {
         color: $notMainText;
@@ -295,8 +234,7 @@ p {
 // -- vars
 $bg-color: #34495e;
 $default-size: 190px;
-// $label-font-size: $default-size / 4;
-// $label-font-size-redo: $default-size * 4;
+
  $label-font-size: 36pt;
  $label-font-size-redo: 36pt;
 
@@ -490,10 +428,7 @@ $default-size: 190px;
 
 // **************************FourthMain********************************
 
-.main_fourth{
-  float: left;
-  width: 100%;
-
+.section-fourth{
   background-color: $mainFourth;
 
   .center {
@@ -530,13 +465,12 @@ $default-size: 190px;
   transition: 600ms;
   width: 100%;
   margin: 0 auto;
-  padding-top: 77px;
-  padding-bottom: 30px;
+  padding: 77px 0 30px 0;
+  padding-left: 2.5%;
 
   li {
 
       display: inline-block;
-      // margin: 0 10px;
       margin-right: 32px;
 
       img {
@@ -560,23 +494,21 @@ $default-size: 190px;
 // **************************FourthMain********************************
 
 // **************************FifthMain********************************
-.main_fifth{
-  float: left;
-  width: 100%;
- 
+.section-fifth{
+  
   background-color: $mainFifth;
 }
 
 
 .rewiews_container {
-  margin-left: 184px;
+  margin-left: 12%;
   
 }
 .rewiews_bloks{
   max-width: 462px;
   float: left;
-  margin-right: 158px;
-    margin-bottom: 111px;
+  margin-right: 12%;
+  margin-bottom: 8.3%;
   img {
     float: left;
     width: 100px;
@@ -622,12 +554,8 @@ p:nth-child(1){
 
 // **************************LastMain********************************
 
-.main_last{
-  float: left;
-  width: 100%;
- 
-  background-color: $lastMain;
-
+  .section-last{
+    background-color: $lastMain;
 
   .center {
     top: -15%;
