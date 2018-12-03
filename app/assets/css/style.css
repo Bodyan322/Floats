@@ -1029,6 +1029,47 @@ footer {
   .main_sett {
     width: 194px; } }
 
+@media all and (max-width: 1303px) {
+  .team_block_container {
+    margin-left: 28%; }
+    .team_block_container .team_items {
+      margin: 0 38px 0 0; } }
+
+@media all and (max-width: 1004px) {
+  .skills_block_container {
+    margin-left: 23%; }
+  .rewiews_container {
+    margin-left: 23%; } }
+
+@media all and (max-width: 997px) {
+  .team_block_container {
+    margin-left: 21%; }
+    .team_block_container .team_items {
+      margin: 0 38px 0 0; } }
+
+@media all and (max-width: 996px) {
+  .blocks_container {
+    margin-left: 26%; }
+    .blocks_container .blokc_flag {
+      margin-right: 15%; }
+    .blocks_container .blokc_repair {
+      margin-right: 15%; } }
+
+@media all and (max-width: 792px) {
+  .blocks_container {
+    margin-left: 34%; }
+  .team_block_container {
+    margin-left: 33%; }
+    .team_block_container .team_items {
+      margin: 0 38px 0 0; }
+  .skills_block_container {
+    margin-left: 33%;
+    padding-bottom: 118px; }
+  .portfolio__items {
+    padding-left: 8%; }
+  .rewiews_container {
+    margin-left: 20%; } }
+
 @media all and (max-width: 992px) and (min-width: 768px) {
   .nav {
     display: none; }
@@ -1096,10 +1137,20 @@ footer {
     width: 275px;
     height: 100%;
     margin: 0 20px 20px 0; }
-  .portfolio__items li img {
-    width: 300px; }
   .feedback__block__container form textarea {
     width: 500px; } }
+
+@media all and (max-width: 756px) {
+  .blocks_container {
+    margin-left: 35%; }
+    .blocks_container .blokc_flag {
+      margin-right: 15%; }
+    .blocks_container .blokc_repair {
+      margin-right: 15%; }
+    .blocks_container .portfolio__items li {
+      margin-right: 47px; }
+    .blocks_container .portfolio__items li img {
+      width: 300px; } }
 
 @media all and (max-width: 670px) {
   .skills_block_container {
@@ -1116,9 +1167,7 @@ footer {
   .feedback__block__container form textarea {
     width: 390px; }
   .rewiews_bloks img {
-    margin-bottom: 95px; }
-  .portfolio__items li img {
-    width: 300px; } }
+    margin-bottom: 95px; } }
 
 @media print {
   * {
