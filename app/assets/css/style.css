@@ -563,7 +563,7 @@ p {
   margin: 0; }
 
 .blocks_container {
-  margin-left: 13%;
+  margin-left: 195px;
   padding-bottom: 119px;
   text-align: center;
   color: #fff; }
@@ -579,13 +579,13 @@ p {
   height: 100%; }
 
 .blokc_flag {
-  margin-right: 3%; }
+  margin-right: 45px; }
 
 .blokc_pen {
-  margin-right: 3.5%; }
+  margin-right: 40px; }
 
 .blokc_repair {
-  margin-right: 4%; }
+  margin-right: 45px; }
 
 .pos_text {
   font-family: Titillium Web,sans-serif;
@@ -1025,9 +1025,33 @@ footer {
   color: #fff;
   text-shadow: none; }
 
-@media all and (max-width: 1360px) and (min-width: 992px) {
-  .main_sett {
-    width: 194px; } }
+@media all and (max-width: 1320px) and (min-width: 1256px) {
+  .blocks_container {
+    margin-left: 365px; }
+  .blokc_pen {
+    margin-right: 120px; }
+  .team_block_container {
+    padding-bottom: 137px;
+    margin-left: 345px; }
+  .team_items {
+    margin: 0 100px 0 0; }
+  .skills_block_container {
+    margin-left: 370px; }
+  .skills_items {
+    margin: 0 42px;
+    margin-left: 0; }
+  .portfolio__items li img {
+    transition: .6s;
+    margin-bottom: 30px;
+    width: 400px; }
+  .rewiews_bloks {
+    margin-right: 30px; } }
+
+@media all and (max-width: 1256px) and (min-width: 1030px) {
+  .blocks_container {
+    margin-left: 240px; }
+  .blokc_pen {
+    margin-right: 177px; } }
 
 @media all and (max-width: 1303px) {
   .team_block_container {
@@ -1047,17 +1071,7 @@ footer {
     .team_block_container .team_items {
       margin: 0 38px 0 0; } }
 
-@media all and (max-width: 996px) {
-  .blocks_container {
-    margin-left: 26%; }
-    .blocks_container .blokc_flag {
-      margin-right: 15%; }
-    .blocks_container .blokc_repair {
-      margin-right: 15%; } }
-
 @media all and (max-width: 792px) {
-  .blocks_container {
-    margin-left: 34%; }
   .team_block_container {
     margin-left: 33%; }
     .team_block_container .team_items {
@@ -1124,8 +1138,6 @@ footer {
     font-size: 25px; }
   .container_second {
     font-size: 15px; }
-  .blocks_container img {
-    height: 100px; }
   .pos_text {
     font-size: 24px;
     font-weight: 700; }
@@ -1138,19 +1150,13 @@ footer {
     height: 100%;
     margin: 0 20px 20px 0; }
   .feedback__block__container form textarea {
-    width: 500px; } }
+    width: 500px; }
+  .portfolio__items li img {
+    width: 400px; } }
 
 @media all and (max-width: 756px) {
   .blocks_container {
-    margin-left: 35%; }
-    .blocks_container .blokc_flag {
-      margin-right: 15%; }
-    .blocks_container .blokc_repair {
-      margin-right: 15%; }
-    .blocks_container .portfolio__items li {
-      margin-right: 47px; }
-    .blocks_container .portfolio__items li img {
-      width: 300px; } }
+    margin-left: 250px; } }
 
 @media all and (max-width: 670px) {
   .skills_block_container {
@@ -1162,8 +1168,6 @@ footer {
     text-align: center; }
   .team_items img {
     width: 170px; }
-  .blocks_container {
-    margin-left: 29%; }
   .feedback__block__container form textarea {
     width: 390px; }
   .rewiews_bloks img {
