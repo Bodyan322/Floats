@@ -1,23 +1,19 @@
 .header {
-}
-.header_first {
   box-sizing: border-box;
   width: 100%;
   background-color: $headerColor;
- 
-
 }
-.content_header_first {
-
-  margin: 0 10.5% 0 15%;
+.content_header {
+  padding: 57px 0;
+  margin: 0 160px 0 222px;
 }
 .logo {
-  
   float: left;
-  padding-top: 60px;
-  
   img {
     width: 121px;
+  }
+  a{
+    float: left;
   }
 }
 .burger {
@@ -25,7 +21,6 @@
   color: #fff;
     
     float: right;
-    padding-top: 69.5px;
     cursor: pointer;
     transition: left .23s;
     z-index: 3;
@@ -77,25 +72,35 @@
 }
 
 
-.header_second {
+.first_sect {
   background-color: $headerColor;
 }
+.container_for_first_sect{
+  width: 960px;
+  margin: 0 auto;
+  padding: 80px 0 160px;
+
+  h3{
+    margin: 0;
+    line-height: 53px;
+  }
+}
 .container_text{
-  line-height: 40pt;
-  padding-top: 8.8%;
-  padding-bottom: 58px;
   color: $mainText;
   text-align: center;
   font-family: Titillium Web,sans-serif;
   font-size: 39px;
+  margin-bottom: 58px;
   
 }
 h3{
   margin: 0;
+  
 }
+
 .center {
   text-align: center;
-  padding-bottom: 159px;
+  // padding-bottom: 159px;
   // position: relative;
   // margin-bottom: 8.2%;
   // left: 44.2%;

@@ -1,20 +1,24 @@
 .main {
 
 }
-.section{
+section{
   width: 100%;
 }
 // **************************FirstMain********************************
-.section-first{
+.second_sect{
 background-color: $mainFirst;
 }
-.container_first {
-    padding-top: 7%;
+.container_for_second_sect{
+  padding-top: 105px;
+  padding-bottom: 136px;
+}
+.headind_sect {
     color: $mainText;
     text-align: center;
     font-size: 37px;
     font-family: Titillium Web,sans-serif;
     letter-spacing: 4px;
+    padding-bottom: 15px;
    
 }
 .decoline::after{
@@ -25,124 +29,104 @@ background-color: $mainFirst;
   background: $notMainText;
   opacity: 0.2; 
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-top: 4px;
 }
 
-.container_second{
-    line-height: 20pt;
-    padding-bottom: 5.5%;
+.heading_descript{
     color: $mainText;
     text-align: center;
+    width: 650px;
+    margin: 0 auto;
     font-family: Titillium Web,sans-serif;
     font-weight: 100;
     font-size: 20px;
+    padding-bottom: 80px;
 }
 p {
     margin: 0;
 }
 .blocks_container{
-    margin-left: 195px;
-    padding-bottom: 119px;
     text-align: center; 
     color: #fff;
-  
+    // width: 1140px;
+    width: 75%;
+    width: 1135px;
+    margin: 0 auto;
+    text-align: center;
+
    
     img{
         height: 130px;
         margin-bottom: 46px;
-    }
-    p:nth-child(1){
-      margin-bottom: 12px;
-    }
+    } 
    
+}
+.block_heading{
+  font-size: 27px;
+  font-weight: bold;
+}
+.block_descript{
+  font-size: 17px;
 }
 .main_sett{
   float: left;
   width: 250px;
-  height: 100%
-}
-.blokc_flag{
-    // margin-right: 38px;
-    margin-right: 45px;
-    
-}
-.blokc_pen{
-    // margin-right: 40px;
-    margin-right: 40px;
-}
-.blokc_repair {
-    // margin-right: 47px;
-    margin-right: 45px;
-    }
-.blokc_rocket{
-     
-}
-.pos_text {
-    font-family: Titillium Web,sans-serif;
-    font-size: 26px;
-    font-weight: bold;
-}
-.poss_text_add {
-    font-family: Titillium Web,sans-serif;
-    font-size: 16px;
+  margin-right: 45px;
+
+  &:nth-child(4){
+    margin-right: 0;
+  }
 }
 // **************************FirstMain********************************
 
 // **************************SecondMain********************************
 
-.section-second{
+.third_sect{
     background-color: $mainSecond;
 }
-.addition {
+.container_for_third_sec{
+  padding-top: 106px;
+  padding-bottom: 133px;
+  .decoline{
     color: $notMainText;
+  }
+  .heading_descript{
+    color: $notMainText;
+    width: 700px;
+  }
 }
-.team_block_container {
-    padding-bottom: 137px;
-    margin-left: 11%;
+.team_container {
+    width: 74%;
+    width: 1120px;
+    margin: 0 auto;
     text-align: center;
 }
-
-    
 .team_items{
     float: left;
-    width: 275px;
-    margin: 0 20px 0 0;
+    width: 250px;
+    margin: 0 40px 0 0;
     img{
         width: 210px;
-        margin-bottom: 21px;
+        margin-bottom: 26px;
     }
-    &:nth-child(4){
-        margin-right: 0; 
-    }
-    .pos_text{
-        color: $notMainText;
-        p:nth-child(2){
-            
-            color: #30bae7;
-            padding-bottom: 15px; 
-        }
-        p:nth-child(3){
-           
-            color: $notMainText;
-            font-weight: 100;
-            padding-bottom: 30px; 
-        }
-    }
+  &:nth-child(4){
+    margin-right: 0;
+  }
+
+  .blue {
+    color:#30bae7;
+  }
+  .block_descript{
+    margin-bottom: 18px;
+  }
     
 }
-.ball_pos{
-   
-}
 .icons_container {
-    padding-left: 38px; 
-    width: 100%;
-    height: 7%;
-    top: 22%;
-
+    margin-left: 23px;
    
 }
 .three_icons{
-  padding-left: 60px;
+  margin-left: 47px;
 }
 
 .clearfix:after {
@@ -151,7 +135,6 @@ p {
     clear: both;
 }
 .social-sprite {
-
     float: left;
     background-image: url(../img/spriteSocial.png);
     background-repeat: no-repeat;
@@ -160,8 +143,7 @@ p {
     cursor: pointer;
     margin: 0px 0px 0px 14px;
     
-   
-
+  
     &-Fb-icon {
         width: 32px;
         height: 32px;
@@ -197,43 +179,50 @@ p {
 
 // **************************ThirdMain********************************
 
-.section-third{
+.fourth_sect{
     background-color: $mainThird;
 }
-.pdb {
-  padding-top: 100px;
+.container_for_fourth_sec{
+  padding-top: 104px;
+  padding-bottom: 116px;
+  .decoline{
+    color: $notMainText;
+  }
+  .heading_descript{
+    color: $notMainText;
+    width: 700px;
+  }
 }
 .skills_block_container {
-    margin-left: 12%;
-    padding-bottom: 118px;
-    .pos_text {
-        color: $notMainText;
-        width: 100%;
-        text-align: center;
-        float: left;
-    }
+    width: 70%;
+    width: 1060px;
+    margin: 0 auto;
+    text-align: center;
 }
 .skills_items {
     float: left;
-    width: 275px;
-    height: 100%;
+    width: 250px;
     margin: 0 20px;
     margin-left: 0;
     
     &:nth-child(4){
         margin-right: 0; 
     }
+    .block_heading {
+      clear: both;
+    }
 }
 
 .progress_pos{
  text-align: center;
  float: left;
+ margin-bottom: 20px;
 }
 @import url(https://fonts.googleapis.com/css?family=Lato:700);
 
 // -- vars
 $bg-color: #34495e;
-$default-size: 190px;
+$default-size: 170px;
 
  $label-font-size: 36pt;
  $label-font-size-redo: 36pt;
@@ -343,7 +332,7 @@ $default-size: 190px;
     position: absolute;
     top: 68px;
     text-align: center;
-    left: 65px;
+    left: 58px;
 
     .smaller {
       color: #bdc3c7;
@@ -428,7 +417,7 @@ $default-size: 190px;
 
 // **************************FourthMain********************************
 
-.section-fourth{
+.fifth_sect{
   background-color: $mainFourth;
 
   .center {
@@ -452,36 +441,73 @@ $default-size: 190px;
     }
   }
 }
-.pdb_portf {
-  padding-bottom: 50px ;
+.container_for_fifth_sec{
+  padding-top: 104px;
+  padding-bottom: 120px;
+  .decoline{
+    color: $notMainText;
+  }
+  .heading_descript{
+    color: $notMainText;
+    width: 700px;
+    padding-bottom: 45px;
+  }
+  .nav {
+    text-align: center;
+    width: 32%;
+    margin: 0 auto;
+    float: none;
+    top: 0;
+    right: 0;
+    margin-bottom: 70px;
+    ul{
+      font-size: 20px;
+      font-weight: bold;
+    li{
+      margin-right: 0;
+      a {
+        color: $notMainText;
+        padding: 5px 23px;
+          &:hover{
+            background-color:#fff;
+            
+          }
+    }
+  }
+  .active {
+    background-color: #fff;
+  }
 }
-.nav_container {
-  position: relative;
   
-  text-align: center;
 }
+
+}
+
+
 
 .portfolio__items {
   transition: 600ms;
-  width: 100%;
-  margin: 0 auto;
-  padding: 77px 0 30px 0;
-  padding-left: 2.5%;
+  text-align: center;
+    width: 81%;
+    width: 1120px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 20px;
 
   li {
 
       display: inline-block;
-      margin-right: 32px;
+      margin-right: 16px;
 
       img {
           transition: 600ms;
           margin-bottom: 30px;
-          width: 560px;
+          
       }
 
       h5 {
           font-size: 14pt;
-          margin-bottom: 50px;
+          margin-bottom: 65px;
           margin-top: 0;
       }
   }
@@ -494,44 +520,45 @@ $default-size: 190px;
 // **************************FourthMain********************************
 
 // **************************FifthMain********************************
-.section-fifth{
-  
+.sixth_sect{
   background-color: $mainFifth;
 }
 
-
+.container_for_sixth_sec{
+  padding-top: 105px;
+}
 .rewiews_container {
-  margin-left: 12%;
-  
+  width: 1144px;
+  margin: 0 auto;
 }
 .rewiews_bloks{
   max-width: 462px;
   float: left;
-  margin-right: 12%;
-  margin-bottom: 8.3%;
+  margin-right: 110px;
+  margin-bottom: 107px;
   img {
     float: left;
     width: 100px;
     margin-right: 52px;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
   p{
-    padding-top: 5px;
-    padding-bottom: 17px;
     font-size: 20px;
     font-style: italic;
     color: #fff;
     word-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 17px;
    
   }
   .position_rewiews{
     font-size: 24px;
-   padding-bottom: 0;
+    margin: 0;
    font-weight: bold;
    font-style: normal;
   }
   .position_rewiews_gold{
-    padding-top: 0;
+    margin: 0;
     color: $reviews-position-color;
     font-style: normal;
   }
@@ -554,7 +581,7 @@ p:nth-child(1){
 
 // **************************LastMain********************************
 
-  .section-last{
+  .seventh_sect{
     background-color: $lastMain;
 
   .center {
@@ -578,12 +605,15 @@ p:nth-child(1){
     }
   }
 }
+.container_for_seventh_sec{
+  padding-bottom: 120px;
+  padding-top: 105px;
+}
 
 .feedback__block__container {
-  float: left;
-  text-align: center;
-  padding: 70px 0px 70px 0px;
-  width: 100%;
+    width: 820px;
+    margin: 0 auto;
+    margin-bottom: 70px;
 
   form {
 
@@ -591,36 +621,42 @@ p:nth-child(1){
     
 
     input {
-        color: #fff;
-        outline: none;
-        background-color: $feedback-form-background-color;
-        border: none;
-        border-radius: 5px;
-        width: 380px;
-        height: 55px;
-        margin: 0 15px 25px 15px;
-        padding-left: 20px;
+      color: #fff;
+      outline: none;
+      background-color: #273a71;
+      border: none;
+      border-radius: 5px;
+      width: 46%;
+      height: 55px;
+      margin: 0 15px 25px;
+      padding-left: 20px;
+      margin-left: 0;
         &::placeholder {
             color: $mainText;
             font-size: 14pt;
         }
     }
+    .first_in {
+      margin-left: 20px;
+    }
 
     textarea {
-        width: 807px;
-        height: 180px;
-        outline: none;
-        background-color: $feedback-form-background-color;
-        border: none;
-        border-radius: 5px;
-        margin: 0 15px;
-        color: $mainText;
-        font-size: 14pt;
-        padding: 20px 0 0 20px;
-        margin-bottom: 50px;
+      width: 100%;
+      height: 180px;
+      outline: none;
+      background-color: #273a71;
+      border: none;
+      border-radius: 5px;
+      /* margin: 0 15px; */
+      color: #fff;
+      font-size: 14pt;
+      padding: 20px 0 0 20px;
+      /* margin-bottom: 50px; */
     }
 }
 }
+
+
 
 
 
